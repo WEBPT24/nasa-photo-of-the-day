@@ -3,6 +3,9 @@ import "./App.css";
 import axios from 'axios';
 import { BASE_URL, API_KEY } from './constants/api';
 import ImageContainer from './Components/ImageContainer';
+import styled from 'styled-components';
+import TopBar from './Components/Title';
+
 
 
 
@@ -26,10 +29,7 @@ function App() {
 
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun <span role="img" aria-label='go!'>🚀</span>!
-      </p>
+      <TopBar />
       <ImageContainer data={data} />
     </div>
   );
